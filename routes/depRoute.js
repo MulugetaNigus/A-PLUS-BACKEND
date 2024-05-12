@@ -16,4 +16,4 @@ route.get("/search", getDepartment);
 route.post("/register", register);
 route.post("/login", login);
 
-module.exports = { route };
+module.exports = route;

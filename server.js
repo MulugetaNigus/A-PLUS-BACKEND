@@ -7,7 +7,7 @@ require("dotenv").config();
 const ConnectDB = require("./utils/DatabaseConfig");
 
 // import the main route
-const { route } = require("./routes/depRoute");
+const route = require("./routes/depRoute");
 
 // initialize the express app
 const app = express();
