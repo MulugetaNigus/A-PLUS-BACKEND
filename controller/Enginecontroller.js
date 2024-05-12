@@ -33,17 +33,17 @@ const register = async (req, res) => {
     if (!addUser) {
       return res
         .status(400)
-        .send({ message: "can not add the user by any means !" });
+        .json({ message: "can not add the user by any means !" });
     }
 
     // get back the inserted data
-    return res.status(200).send({ Current_Status: "successfully registered !", data: addUser });
+    return res.status(200).json({ Current_Status: "successfully registered !", data: addUser });
 
     // handle further error
   } catch (error) {
     return res
       .status(400)
-      .send({ message: "can not register the user due to : " + error.message });
+      .json({ message: "can not register the user due to : " + error.message });
   }
 };
 
